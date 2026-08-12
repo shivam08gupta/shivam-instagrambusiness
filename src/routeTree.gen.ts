@@ -10,8 +10,12 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CartRouteImport } from './routes/cart'
 import { Route as CheckoutRouteImport } from './routes/checkout'
+import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as OrderConfirmationRouteImport } from './routes/order-confirmation'
+import { Route as OrdersRouteImport } from './routes/orders'
+import { Route as ProductRouteImport } from './routes/product'
 import { Route as ShopRouteImport } from './routes/shop'
 import { Route as OnboardingBusinessRouteImport } from './routes/onboarding.business'
 import { Route as OnboardingCategoryRouteImport } from './routes/onboarding.category'
@@ -23,14 +27,34 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CartRoute = CartRouteImport.update({
+  id: '/cart',
+  path: '/cart',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CheckoutRoute = CheckoutRouteImport.update({
   id: '/checkout',
   path: '/checkout',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const OrderConfirmationRoute = OrderConfirmationRouteImport.update({
   id: '/order-confirmation',
   path: '/order-confirmation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OrdersRoute = OrdersRouteImport.update({
+  id: '/orders',
+  path: '/orders',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProductRoute = ProductRouteImport.update({
+  id: '/product',
+  path: '/product',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ShopRoute = ShopRouteImport.update({
@@ -61,8 +85,12 @@ const OnboardingVerificationRoute = OnboardingVerificationRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/cart': typeof CartRoute
   '/checkout': typeof CheckoutRoute
+  '/dashboard': typeof DashboardRoute
   '/order-confirmation': typeof OrderConfirmationRoute
+  '/orders': typeof OrdersRoute
+  '/product': typeof ProductRoute
   '/shop': typeof ShopRoute
   '/onboarding/business': typeof OnboardingBusinessRoute
   '/onboarding/category': typeof OnboardingCategoryRoute
@@ -71,8 +99,12 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/cart': typeof CartRoute
   '/checkout': typeof CheckoutRoute
+  '/dashboard': typeof DashboardRoute
   '/order-confirmation': typeof OrderConfirmationRoute
+  '/orders': typeof OrdersRoute
+  '/product': typeof ProductRoute
   '/shop': typeof ShopRoute
   '/onboarding/business': typeof OnboardingBusinessRoute
   '/onboarding/category': typeof OnboardingCategoryRoute
@@ -82,8 +114,12 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/cart': typeof CartRoute
   '/checkout': typeof CheckoutRoute
+  '/dashboard': typeof DashboardRoute
   '/order-confirmation': typeof OrderConfirmationRoute
+  '/orders': typeof OrdersRoute
+  '/product': typeof ProductRoute
   '/shop': typeof ShopRoute
   '/onboarding/business': typeof OnboardingBusinessRoute
   '/onboarding/category': typeof OnboardingCategoryRoute
@@ -94,8 +130,12 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/cart'
     | '/checkout'
+    | '/dashboard'
     | '/order-confirmation'
+    | '/orders'
+    | '/product'
     | '/shop'
     | '/onboarding/business'
     | '/onboarding/category'
@@ -104,8 +144,12 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/cart'
     | '/checkout'
+    | '/dashboard'
     | '/order-confirmation'
+    | '/orders'
+    | '/product'
     | '/shop'
     | '/onboarding/business'
     | '/onboarding/category'
@@ -114,8 +158,12 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/cart'
     | '/checkout'
+    | '/dashboard'
     | '/order-confirmation'
+    | '/orders'
+    | '/product'
     | '/shop'
     | '/onboarding/business'
     | '/onboarding/category'
@@ -125,8 +173,12 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CartRoute: typeof CartRoute
   CheckoutRoute: typeof CheckoutRoute
+  DashboardRoute: typeof DashboardRoute
   OrderConfirmationRoute: typeof OrderConfirmationRoute
+  OrdersRoute: typeof OrdersRoute
+  ProductRoute: typeof ProductRoute
   ShopRoute: typeof ShopRoute
   OnboardingBusinessRoute: typeof OnboardingBusinessRoute
   OnboardingCategoryRoute: typeof OnboardingCategoryRoute
@@ -143,6 +195,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/cart': {
+      id: '/cart'
+      path: '/cart'
+      fullPath: '/cart'
+      preLoaderRoute: typeof CartRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/checkout': {
       id: '/checkout'
       path: '/checkout'
@@ -150,11 +209,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CheckoutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/order-confirmation': {
       id: '/order-confirmation'
       path: '/order-confirmation'
       fullPath: '/order-confirmation'
       preLoaderRoute: typeof OrderConfirmationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/orders': {
+      id: '/orders'
+      path: '/orders'
+      fullPath: '/orders'
+      preLoaderRoute: typeof OrdersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/product': {
+      id: '/product'
+      path: '/product'
+      fullPath: '/product'
+      preLoaderRoute: typeof ProductRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/shop': {
@@ -197,8 +277,12 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CartRoute: CartRoute,
   CheckoutRoute: CheckoutRoute,
+  DashboardRoute: DashboardRoute,
   OrderConfirmationRoute: OrderConfirmationRoute,
+  OrdersRoute: OrdersRoute,
+  ProductRoute: ProductRoute,
   ShopRoute: ShopRoute,
   OnboardingBusinessRoute: OnboardingBusinessRoute,
   OnboardingCategoryRoute: OnboardingCategoryRoute,
