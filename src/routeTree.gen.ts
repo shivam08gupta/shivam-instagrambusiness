@@ -10,33 +10,128 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CheckoutRouteImport } from './routes/checkout'
+import { Route as OrderConfirmationRouteImport } from './routes/order-confirmation'
+import { Route as ShopRouteImport } from './routes/shop'
+import { Route as OnboardingBusinessRouteImport } from './routes/onboarding.business'
+import { Route as OnboardingCategoryRouteImport } from './routes/onboarding.category'
+import { Route as OnboardingProductRouteImport } from './routes/onboarding.product'
+import { Route as OnboardingVerificationRouteImport } from './routes/onboarding.verification'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CheckoutRoute = CheckoutRouteImport.update({
+  id: '/checkout',
+  path: '/checkout',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OrderConfirmationRoute = OrderConfirmationRouteImport.update({
+  id: '/order-confirmation',
+  path: '/order-confirmation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ShopRoute = ShopRouteImport.update({
+  id: '/shop',
+  path: '/shop',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OnboardingBusinessRoute = OnboardingBusinessRouteImport.update({
+  id: '/onboarding/business',
+  path: '/onboarding/business',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OnboardingCategoryRoute = OnboardingCategoryRouteImport.update({
+  id: '/onboarding/category',
+  path: '/onboarding/category',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OnboardingProductRoute = OnboardingProductRouteImport.update({
+  id: '/onboarding/product',
+  path: '/onboarding/product',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OnboardingVerificationRoute = OnboardingVerificationRouteImport.update({
+  id: '/onboarding/verification',
+  path: '/onboarding/verification',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/checkout': typeof CheckoutRoute
+  '/order-confirmation': typeof OrderConfirmationRoute
+  '/shop': typeof ShopRoute
+  '/onboarding/business': typeof OnboardingBusinessRoute
+  '/onboarding/category': typeof OnboardingCategoryRoute
+  '/onboarding/product': typeof OnboardingProductRoute
+  '/onboarding/verification': typeof OnboardingVerificationRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/checkout': typeof CheckoutRoute
+  '/order-confirmation': typeof OrderConfirmationRoute
+  '/shop': typeof ShopRoute
+  '/onboarding/business': typeof OnboardingBusinessRoute
+  '/onboarding/category': typeof OnboardingCategoryRoute
+  '/onboarding/product': typeof OnboardingProductRoute
+  '/onboarding/verification': typeof OnboardingVerificationRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/checkout': typeof CheckoutRoute
+  '/order-confirmation': typeof OrderConfirmationRoute
+  '/shop': typeof ShopRoute
+  '/onboarding/business': typeof OnboardingBusinessRoute
+  '/onboarding/category': typeof OnboardingCategoryRoute
+  '/onboarding/product': typeof OnboardingProductRoute
+  '/onboarding/verification': typeof OnboardingVerificationRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/checkout'
+    | '/order-confirmation'
+    | '/shop'
+    | '/onboarding/business'
+    | '/onboarding/category'
+    | '/onboarding/product'
+    | '/onboarding/verification'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/checkout'
+    | '/order-confirmation'
+    | '/shop'
+    | '/onboarding/business'
+    | '/onboarding/category'
+    | '/onboarding/product'
+    | '/onboarding/verification'
+  id:
+    | '__root__'
+    | '/'
+    | '/checkout'
+    | '/order-confirmation'
+    | '/shop'
+    | '/onboarding/business'
+    | '/onboarding/category'
+    | '/onboarding/product'
+    | '/onboarding/verification'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CheckoutRoute: typeof CheckoutRoute
+  OrderConfirmationRoute: typeof OrderConfirmationRoute
+  ShopRoute: typeof ShopRoute
+  OnboardingBusinessRoute: typeof OnboardingBusinessRoute
+  OnboardingCategoryRoute: typeof OnboardingCategoryRoute
+  OnboardingProductRoute: typeof OnboardingProductRoute
+  OnboardingVerificationRoute: typeof OnboardingVerificationRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,12 +143,78 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/checkout': {
+      id: '/checkout'
+      path: '/checkout'
+      fullPath: '/checkout'
+      preLoaderRoute: typeof CheckoutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/order-confirmation': {
+      id: '/order-confirmation'
+      path: '/order-confirmation'
+      fullPath: '/order-confirmation'
+      preLoaderRoute: typeof OrderConfirmationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/shop': {
+      id: '/shop'
+      path: '/shop'
+      fullPath: '/shop'
+      preLoaderRoute: typeof ShopRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/onboarding/business': {
+      id: '/onboarding/business'
+      path: '/onboarding/business'
+      fullPath: '/onboarding/business'
+      preLoaderRoute: typeof OnboardingBusinessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/onboarding/category': {
+      id: '/onboarding/category'
+      path: '/onboarding/category'
+      fullPath: '/onboarding/category'
+      preLoaderRoute: typeof OnboardingCategoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/onboarding/product': {
+      id: '/onboarding/product'
+      path: '/onboarding/product'
+      fullPath: '/onboarding/product'
+      preLoaderRoute: typeof OnboardingProductRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/onboarding/verification': {
+      id: '/onboarding/verification'
+      path: '/onboarding/verification'
+      fullPath: '/onboarding/verification'
+      preLoaderRoute: typeof OnboardingVerificationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CheckoutRoute: CheckoutRoute,
+  OrderConfirmationRoute: OrderConfirmationRoute,
+  ShopRoute: ShopRoute,
+  OnboardingBusinessRoute: OnboardingBusinessRoute,
+  OnboardingCategoryRoute: OnboardingCategoryRoute,
+  OnboardingProductRoute: OnboardingProductRoute,
+  OnboardingVerificationRoute: OnboardingVerificationRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
