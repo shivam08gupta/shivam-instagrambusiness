@@ -205,7 +205,7 @@ function Product() {
       </main>
 
       {/* Mobile Sticky CTA Bar */}
-      <div className=" fixed bottom-0 left-0 right-0 bg-surface/85 backdrop-blur-md border-t border-surface-variant px-margin-mobile py-3 flex gap-sm z-40 pb-safe">
+      <div className=" fixed bottom-0 inset-x-0 mx-auto w-full max-w-[440px] bg-surface/85 backdrop-blur-md border-t border-surface-variant px-margin-mobile py-3 flex gap-sm z-40 pb-safe">
         <Link
           to="/cart"
           className="flex-1 h-[44px] bg-transparent border border-outline text-on-surface font-label-md text-label-md rounded-lg flex items-center justify-center gap-2 active:bg-surface-container-low transition-colors"

@@ -229,7 +229,7 @@ function CheckoutPage() {
         </section>
       </main>
 
-      <div className="fixed bottom-0 left-0 w-full bg-surface border-t border-surface-variant p-4 pb-safe flex items-center justify-between gap-4        z-40">
+      <div className="fixed bottom-0 inset-x-0 mx-auto w-full max-w-[440px] bg-surface border-t border-surface-variant p-4 pb-safe flex items-center justify-between gap-4        z-40">
         <div className="hidden "></div>
         <div className="flex-1  ">
           <Link

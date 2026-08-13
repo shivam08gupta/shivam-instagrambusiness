@@ -155,7 +155,7 @@ function Shop() {
       </main>
 
       {/* BottomNavBar (Mobile Only) */}
-      <nav className=" fixed bottom-0 w-full z-50 flex justify-around items-center bg-surface px-4 py-2 pb-safe border-t border-surface-variant">
+      <nav className=" fixed bottom-0 inset-x-0 mx-auto w-full max-w-[440px] z-50 flex justify-around items-center bg-surface px-4 py-2 pb-safe border-t border-surface-variant">
         <a className="flex flex-col items-center justify-center text-on-surface-variant w-16 h-12 hover:opacity-80 active:scale-95 transition-transform duration-100" href="#">
           <MaterialIcon name="home" className="mb-1" />
           <span className="font-label-sm text-[10px]">Home</span>

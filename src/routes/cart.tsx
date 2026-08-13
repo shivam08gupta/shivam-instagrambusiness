@@ -158,7 +158,7 @@ function Cart() {
         </main>
 
         {/* Fixed Bottom Action */}
-        <div className="fixed bottom-0 w-full max-w-[480px] bg-surface border-t border-surface-variant p-margin-mobile z-50">
+        <div className="fixed bottom-0 inset-x-0 mx-auto w-full max-w-[440px] bg-surface border-t border-surface-variant p-margin-mobile z-50">
           <Link
             to="/checkout"
             className="w-full bg-primary-container text-on-primary rounded-lg py-[14px] font-label-md text-label-md flex items-center justify-center gap-sm hover:opacity-90 active:scale-95 transition-all"

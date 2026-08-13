@@ -192,7 +192,7 @@ function ProfilePage() {
       </main>
 
       {/* BottomNavBar */}
-      <nav className="fixed bottom-0 w-full z-50 flex justify-around items-center bg-surface border-t border-surface-variant dark:border-outline-variant px-4 py-2 pb-safe ">
+      <nav className="fixed bottom-0 inset-x-0 mx-auto w-full max-w-[440px] z-50 flex justify-around items-center bg-surface border-t border-surface-variant dark:border-outline-variant px-4 py-2 pb-safe ">
         <Link
           to="/dashboard"
           className="flex flex-col items-center justify-center text-on-surface-variant hover:opacity-80 active:scale-95 transition-transform duration-100 p-2"
