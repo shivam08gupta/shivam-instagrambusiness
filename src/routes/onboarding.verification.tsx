@@ -33,7 +33,7 @@ function VerificationPage() {
           <MaterialIcon name="more_horiz" />
         </button>
       </header>
-      <main className="max-w-screen-md mx-auto px-margin-mobile  py-xl pb-32">
+      <main className="max-w-full mx-auto px-margin-mobile  py-xl pb-32">
         <div className="mb-xl text-center ">
           <h2 className="font-display-lg text-display-lg text-on-surface mb-sm">Business Verification</h2>
           <p className="font-body-lg text-body-lg text-on-surface-variant">

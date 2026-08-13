@@ -88,7 +88,7 @@ function Shop() {
           </div>
           <div className="flex-1 text-center ">
             <h2 className="font-display-lg text-display-lg text-on-surface mb-unit">Amara's Boutique</h2>
-            <p className="font-body-md text-body-md text-on-surface-variant mb-md max-w-2xl">
+            <p className="font-body-md text-body-md text-on-surface-variant mb-md max-w-full">
               Handcrafted, sustainable jewelry for the modern minimalist. Ethically sourced materials designed in London.
             </p>
             <div className="flex flex-wrap justify-center  gap-sm">

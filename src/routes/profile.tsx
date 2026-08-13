@@ -88,7 +88,7 @@ function ProfilePage() {
         </div>
       </header>
 
-      <main className="flex-grow w-full max-w-lg mx-auto pb-24">
+      <main className="flex-grow w-full max-w-full mx-auto pb-24">
         {/* Profile Info */}
         <section className="px-margin-mobile py-4">
           <div className="flex items-center justify-between mb-4">

@@ -35,7 +35,7 @@ function BusinessPage() {
         <div className="w-11" />
       </header>
       <main className="flex-1 w-full max-w-[1200px] mx-auto p-margin-mobile  flex items-center justify-center">
-        <div className="w-full max-w-md bg-surface-container-lowest border border-surface-variant rounded-lg p-lg shadow-sm">
+        <div className="w-full max-w-full bg-surface-container-lowest border border-surface-variant rounded-lg p-lg shadow-sm">
           <div className="mb-xl text-center ">
             <h2 className="font-headline-md-mobile text-headline-md-mobile   text-on-surface mb-sm">
               Business Information
