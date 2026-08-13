@@ -64,7 +64,7 @@ function Shop() {
         >
           <MaterialIcon name="arrow_back" />
         </button>
-        <h1 className="font-headline-sm-mobile text-headline-sm-mobile md:font-headline-sm md:text-headline-sm text-on-surface font-bold text-center flex-1 mx-4 truncate">
+        <h1 className="font-headline-sm-mobile text-headline-sm-mobile   text-on-surface font-bold text-center flex-1 mx-4 truncate">
           Amara's Boutique
         </h1>
         <button
@@ -76,22 +76,22 @@ function Shop() {
       </header>
 
       {/* Main Content Area */}
-      <main className="flex-1 pb-24 md:pb-8 flex flex-col w-full max-w-[1200px] mx-auto md:px-margin-desktop">
+      <main className="flex-1 pb-24  flex flex-col w-full max-w-[1200px] mx-auto ">
         {/* Store Info & Actions */}
-        <section className="px-margin-mobile md:px-0 py-lg flex flex-col md:flex-row items-center gap-md md:gap-xl border-b border-surface-variant">
-          <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-surface-variant flex-shrink-0">
+        <section className="px-margin-mobile  py-lg flex flex-col  items-center gap-md  border-b border-surface-variant">
+          <div className="w-24 h-24   rounded-full overflow-hidden border-2 border-surface-variant flex-shrink-0">
             <img
               alt="Store logo"
               className="w-full h-full object-cover"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe1c0-mxUCDqjum-vFckCZcOENe8o381bFNmcnZl3ApZHTN1oQXZGjhzrHSxdYxV_Yf8oIZl5GGcWnuBE3umlwSNcoJxN9--Fov89K_UkKlOGH1T43T1As0Ql1dKO7EdxdIAPSnEQ0_vfqP1_krQDFHqhvD8F7FYhWuefLOTynQoGOci53PGm84NfZq1HuHX8AL435YavESIydq6gTqTne32phT0v9Y60NJpMv0utPJnGAVgWevCnB"
             />
           </div>
-          <div className="flex-1 text-center md:text-left">
+          <div className="flex-1 text-center ">
             <h2 className="font-display-lg text-display-lg text-on-surface mb-unit">Amara's Boutique</h2>
             <p className="font-body-md text-body-md text-on-surface-variant mb-md max-w-2xl">
               Handcrafted, sustainable jewelry for the modern minimalist. Ethically sourced materials designed in London.
             </p>
-            <div className="flex flex-wrap justify-center md:justify-start gap-sm">
+            <div className="flex flex-wrap justify-center  gap-sm">
               <button className="bg-primary-container text-on-primary font-label-md text-label-md py-2 px-6 rounded-lg hover:opacity-90 active:scale-95 transition-all">
                 Shop All
               </button>
@@ -103,7 +103,7 @@ function Shop() {
         </section>
 
         {/* Categories Scrollable Row */}
-        <section className="py-md px-margin-mobile md:px-0">
+        <section className="py-md px-margin-mobile ">
           <div className="flex overflow-x-auto scrollbar-hide gap-sm snap-x">
             {categories.map((category) => (
               <button
@@ -122,8 +122,8 @@ function Shop() {
         </section>
 
         {/* Product Grid */}
-        <section className="px-margin-mobile md:px-0 py-sm">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-md">
+        <section className="px-margin-mobile  py-sm">
+          <div className="grid grid-cols-2   gap-md">
             {products.map((product) => (
               <Link to="/product" key={product.name} className="flex flex-col group cursor-pointer">
                 <div className="aspect-[4/5] w-full rounded-lg overflow-hidden bg-surface-container-low mb-sm relative border border-surface-variant">
@@ -155,7 +155,7 @@ function Shop() {
       </main>
 
       {/* BottomNavBar (Mobile Only) */}
-      <nav className="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center bg-surface px-4 py-2 pb-safe border-t border-surface-variant">
+      <nav className=" fixed bottom-0 w-full z-50 flex justify-around items-center bg-surface px-4 py-2 pb-safe border-t border-surface-variant">
         <a className="flex flex-col items-center justify-center text-on-surface-variant w-16 h-12 hover:opacity-80 active:scale-95 transition-transform duration-100" href="#">
           <MaterialIcon name="home" className="mb-1" />
           <span className="font-label-sm text-[10px]">Home</span>

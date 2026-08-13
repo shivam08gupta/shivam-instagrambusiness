@@ -32,7 +32,7 @@ function ProductPage() {
           >
             <MaterialIcon name="arrow_back" />
           </button>
-          <h1 className="font-headline-sm-mobile text-headline-sm-mobile md:font-headline-sm md:text-headline-sm font-bold text-on-surface">
+          <h1 className="font-headline-sm-mobile text-headline-sm-mobile   font-bold text-on-surface">
             New Product
           </h1>
         </div>

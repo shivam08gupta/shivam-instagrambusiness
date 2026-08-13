@@ -71,7 +71,7 @@ function Cart() {
           <button aria-label="Go back" className="w-11 h-11 flex items-center justify-center -ml-2 text-primary">
             <MaterialIcon name="arrow_back" />
           </button>
-          <h1 className="font-headline-sm-mobile text-headline-sm-mobile md:font-headline-sm md:text-headline-sm font-bold text-on-surface text-center flex-1">
+          <h1 className="font-headline-sm-mobile text-headline-sm-mobile   font-bold text-on-surface text-center flex-1">
             Shop
           </h1>
           <button aria-label="More options" className="w-11 h-11 flex items-center justify-center -mr-2 text-primary">

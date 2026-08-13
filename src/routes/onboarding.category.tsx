@@ -43,7 +43,7 @@ function CategoryPage() {
           >
             <MaterialIcon name="arrow_back" className="text-on-surface" />
           </button>
-          <h1 className="font-headline-sm-mobile text-headline-sm-mobile md:font-headline-sm md:text-headline-sm text-on-surface">Category</h1>
+          <h1 className="font-headline-sm-mobile text-headline-sm-mobile   text-on-surface">Category</h1>
           <div className="w-11 h-11" />
         </div>
         <div className="w-full max-w-[600px] px-sm mt-sm">

@@ -93,9 +93,9 @@ function OrdersPage() {
   return (
     <div className="bg-background text-on-background min-h-screen font-body-md flex flex-col">
       {/* TopAppBar */}
-      <header className="sticky top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-14 bg-surface border-b border-surface-variant md:px-margin-desktop md:border-b-0 md:shadow-sm">
+      <header className="sticky top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-14 bg-surface border-b border-surface-variant   ">
         <div className="flex items-center">
-          <button className="p-2 -ml-2 text-primary hover:bg-surface-container-low transition-colors rounded-full md:hidden">
+          <button className="p-2 -ml-2 text-primary hover:bg-surface-container-low transition-colors rounded-full ">
             <MaterialIcon name="arrow_back" />
           </button>
           <h1 className="ml-2 font-display-lg text-display-lg font-bold text-on-surface">Shop</h1>
@@ -106,12 +106,12 @@ function OrdersPage() {
       </header>
 
       {/* Main Content Canvas */}
-      <main className="w-full max-w-[1200px] mx-auto pb-[80px] md:pb-lg md:pt-lg flex-grow">
+      <main className="w-full max-w-[1200px] mx-auto pb-[80px]   flex-grow">
         {/* Page Header */}
-        <div className="px-margin-mobile md:px-margin-desktop py-lg">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-md">
+        <div className="px-margin-mobile  py-lg">
+          <div className="flex flex-col   justify-between gap-md">
             <div>
-              <h2 className="font-headline-md-mobile text-headline-md-mobile md:font-headline-md md:text-headline-md text-on-background">
+              <h2 className="font-headline-md-mobile text-headline-md-mobile   text-on-background">
                 Active Orders
               </h2>
               <p className="font-body-sm text-body-sm text-on-surface-variant mt-sm">
@@ -119,7 +119,7 @@ function OrdersPage() {
               </p>
             </div>
             <div className="flex gap-sm">
-              <div className="relative flex-1 md:w-64">
+              <div className="relative flex-1 ">
                 <MaterialIcon
                   name="search"
                   className="absolute left-3 top-1/2 -translate-y-1/2 text-outline"
@@ -132,7 +132,7 @@ function OrdersPage() {
               </div>
               <button className="h-[44px] px-md bg-surface-container-lowest border border-surface-variant rounded-lg flex items-center gap-xs hover:bg-surface-container-low transition-colors text-on-surface">
                 <MaterialIcon name="filter_list" className="text-outline" />
-                <span className="font-label-md text-label-md hidden md:inline">Filter</span>
+                <span className="font-label-md text-label-md hidden ">Filter</span>
               </button>
             </div>
           </div>
@@ -156,7 +156,7 @@ function OrdersPage() {
         </div>
 
         {/* Orders List - Bento Grid Style on Desktop */}
-        <div className="px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+        <div className="px-margin-mobile  grid grid-cols-1   gap-md">
           {filteredOrders.map((order) =>
             order.variant === "error" ? (
               <div

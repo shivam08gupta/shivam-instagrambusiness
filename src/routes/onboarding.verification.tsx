@@ -17,7 +17,7 @@ function VerificationPage() {
   const router = useRouter();
   return (
     <div className="bg-background text-on-background min-h-screen font-body-md">
-      <header className="sticky top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-14 bg-surface border-b border-surface-variant dark:border-outline-variant md:px-margin-desktop">
+      <header className="sticky top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-14 bg-surface border-b border-surface-variant dark:border-outline-variant ">
         <div className="flex items-center gap-4">
           <button
             onClick={() => router.history.back()}
@@ -25,7 +25,7 @@ function VerificationPage() {
           >
             <MaterialIcon name="arrow_back" />
           </button>
-          <h1 className="font-headline-sm-mobile text-headline-sm-mobile md:font-headline-sm md:text-headline-sm text-primary dark:text-primary-fixed font-bold">
+          <h1 className="font-headline-sm-mobile text-headline-sm-mobile   text-primary dark:text-primary-fixed font-bold">
             Shop
           </h1>
         </div>
@@ -33,20 +33,20 @@ function VerificationPage() {
           <MaterialIcon name="more_horiz" />
         </button>
       </header>
-      <main className="max-w-screen-md mx-auto px-margin-mobile md:px-margin-desktop py-xl pb-32">
-        <div className="mb-xl text-center md:text-left">
+      <main className="max-w-screen-md mx-auto px-margin-mobile  py-xl pb-32">
+        <div className="mb-xl text-center ">
           <h2 className="font-display-lg text-display-lg text-on-surface mb-sm">Business Verification</h2>
           <p className="font-body-lg text-body-lg text-on-surface-variant">
             Upload your ID or GST certificate to establish trust with your customers. This helps us ensure a safe marketplace.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
+        <div className="grid grid-cols-1  gap-lg">
           <div className="bg-surface border border-surface-variant rounded-xl p-lg flex flex-col items-center justify-center text-center gap-md">
             <div className="w-16 h-16 bg-surface-container-low rounded-full flex items-center justify-center text-primary mb-2">
               <MaterialIcon name="upload_file" filled style={{ fontSize: 32 }} />
             </div>
             <div>
-              <h3 className="font-headline-sm-mobile text-headline-sm-mobile md:font-headline-sm md:text-headline-sm text-on-surface">
+              <h3 className="font-headline-sm-mobile text-headline-sm-mobile   text-on-surface">
                 Upload Documents
               </h3>
               <p className="font-body-sm text-body-sm text-on-surface-variant mt-1">Accepts PDF, JPG, or PNG (Max 5MB)</p>
@@ -64,7 +64,7 @@ function VerificationPage() {
             <div>
               <div className="flex items-center gap-sm mb-md">
                 <MaterialIcon name="pending" filled className="text-secondary" />
-                <h3 className="font-headline-sm-mobile text-headline-sm-mobile md:font-headline-sm md:text-headline-sm text-on-surface">
+                <h3 className="font-headline-sm-mobile text-headline-sm-mobile   text-on-surface">
                   Verification Status
                 </h3>
               </div>

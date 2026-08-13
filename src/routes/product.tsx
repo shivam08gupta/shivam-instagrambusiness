@@ -69,13 +69,13 @@ const thumbnails = [
 
 function Product() {
   return (
-    <div className="bg-background text-on-background min-h-screen pb-24 md:pb-0 font-body-md">
+    <div className="bg-background text-on-background min-h-screen pb-24  font-body-md">
       {/* TopAppBar */}
       <header className="sticky top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-14 bg-surface border-b border-surface-variant transition-colors">
         <button className="text-on-surface-variant hover:bg-surface-container-low transition-colors rounded-full p-2 active:opacity-70 flex items-center justify-center">
           <MaterialIcon name="arrow_back" />
         </button>
-        <h1 className="font-headline-sm-mobile text-headline-sm-mobile md:font-headline-sm md:text-headline-sm text-on-surface font-bold">Shop</h1>
+        <h1 className="font-headline-sm-mobile text-headline-sm-mobile   text-on-surface font-bold">Shop</h1>
         <button className="text-on-surface-variant hover:bg-surface-container-low transition-colors rounded-full p-2 active:opacity-70 flex items-center justify-center">
           <MaterialIcon name="more_horiz" />
         </button>
@@ -83,17 +83,17 @@ function Product() {
 
       <main className="max-w-[1200px] mx-auto w-full">
         {/* Desktop Layout Wrapper */}
-        <div className="md:grid md:grid-cols-12 md:gap-lg md:pt-lg md:px-margin-desktop">
+        <div className="    ">
           {/* Gallery Section */}
-          <section className="md:col-span-7 lg:col-span-8 flex flex-col gap-sm">
+          <section className="  flex flex-col gap-sm">
             {/* Main Image */}
-            <div className="relative w-full aspect-[4/5] md:aspect-auto md:h-[600px] bg-surface-container-low md:rounded-xl overflow-hidden group">
+            <div className="relative w-full aspect-[4/5]   bg-surface-container-low  overflow-hidden group">
               <img
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 alt="A macro studio photograph of an exquisite handcrafted Kundal gold earring resting on a pristine white marble block. The lighting is high-key and soft, highlighting the intricate filigree work and traditional Jaipur heritage craftsmanship. The background is a clean, bright minimalist studio setting with subtle warm tones. The aesthetic is luxurious, modern, and highly detailed, perfect for a premium e-commerce product page."
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkn8jbB0wIe1Q2aagr_lcH0VAruw8u_O-mz8uFyL-YBDk1bV6jJGSWy_OkTplaJ0kHpvBPU9vY2T9BvZ2yYLmgbr_t6J5jchQ98LHzLMkzboQKlzZF7oIbfYgGVFviDIDs1SOjQLaHgLJ5GLP9qVSrkkxrfwvoEYMMd6ub2BxLf1eRHYTs6qZX1JOgspCX-ZlKkB5hdbKES0ejfWv8WZEM6sDIs5CBQgf3-47LolL_SBgqaXjkjcxg"
               />
-              <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 md:hidden z-10">
+              <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2  z-10">
                 <div className="w-2 h-2 rounded-full bg-primary"></div>
                 <div className="w-2 h-2 rounded-full bg-outline-variant"></div>
                 <div className="w-2 h-2 rounded-full bg-outline-variant"></div>
@@ -101,7 +101,7 @@ function Product() {
               </div>
             </div>
             {/* Thumbnails (Desktop) */}
-            <div className="hidden md:grid grid-cols-4 gap-sm h-32">
+            <div className="hidden  grid-cols-4 gap-sm h-32">
               {thumbnails.map((thumb, i) => (
                 <div
                   key={i}
@@ -116,7 +116,7 @@ function Product() {
           </section>
 
           {/* Product Details Section */}
-          <section className="md:col-span-5 lg:col-span-4 px-margin-mobile py-lg md:px-0 md:py-0 flex flex-col gap-md">
+          <section className="  px-margin-mobile py-lg   flex flex-col gap-md">
             <div className="flex flex-col gap-xs">
               <div className="flex items-center gap-2 mb-1">
                 <span className="px-2 py-1 bg-surface-container-high rounded-full font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
@@ -156,7 +156,7 @@ function Product() {
               </ul>
             </div>
             {/* Desktop CTA */}
-            <div className="hidden md:flex flex-col gap-sm mt-6">
+            <div className="hidden  flex-col gap-sm mt-6">
               <button className="w-full h-[48px] bg-primary text-on-primary font-label-md text-label-md rounded-lg hover:bg-primary-container transition-colors shadow-sm active:scale-[0.98]">
                 Buy Now
               </button>
@@ -171,14 +171,14 @@ function Product() {
         </div>
 
         {/* Related Products */}
-        <section className="mt-xl px-margin-mobile md:px-margin-desktop mb-lg">
+        <section className="mt-xl px-margin-mobile  mb-lg">
           <div className="flex justify-between items-center mb-md">
             <h3 className="font-headline-sm text-headline-sm text-on-surface">You might also like</h3>
             <button className="text-primary font-label-md text-label-md hover:underline">View All</button>
           </div>
-          <div className="flex overflow-x-auto gap-md pb-4 scrollbar-hide md:grid md:grid-cols-4 snap-x">
+          <div className="flex overflow-x-auto gap-md pb-4 scrollbar-hide   snap-x">
             {relatedProducts.map((product) => (
-              <div key={product.name} className="min-w-[200px] md:min-w-0 flex flex-col gap-2 snap-start group cursor-pointer">
+              <div key={product.name} className="min-w-[200px]  flex flex-col gap-2 snap-start group cursor-pointer">
                 <div className="w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden relative border border-surface-variant">
                   <img
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -205,7 +205,7 @@ function Product() {
       </main>
 
       {/* Mobile Sticky CTA Bar */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-surface/85 backdrop-blur-md border-t border-surface-variant px-margin-mobile py-3 flex gap-sm z-40 pb-safe">
+      <div className=" fixed bottom-0 left-0 right-0 bg-surface/85 backdrop-blur-md border-t border-surface-variant px-margin-mobile py-3 flex gap-sm z-40 pb-safe">
         <Link
           to="/cart"
           className="flex-1 h-[44px] bg-transparent border border-outline text-on-surface font-label-md text-label-md rounded-lg flex items-center justify-center gap-2 active:bg-surface-container-low transition-colors"

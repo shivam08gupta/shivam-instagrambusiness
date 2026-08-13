@@ -19,8 +19,8 @@ function CheckoutPage() {
   const [payment, setPayment] = useState("upi");
 
   return (
-    <div className="bg-background text-on-background min-h-screen pb-[120px] md:pb-0 font-body-md">
-      <header className="sticky top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-14 bg-surface border-b border-surface-variant transition-colors">
+    <div className="bg-background text-on-background min-h-screen pb-[120px]  font-body-md">
+      <header className="sticky top-0 w-full z-50 flex justify-between items-center px-margin-mobile  h-14 bg-surface border-b border-surface-variant transition-colors">
         <Link
           to="/cart"
           aria-label="Go back"
@@ -28,7 +28,7 @@ function CheckoutPage() {
         >
           <MaterialIcon name="arrow_back" />
         </Link>
-        <h1 className="font-headline-sm-mobile text-headline-sm-mobile md:font-headline-sm md:text-headline-sm font-bold text-on-surface absolute left-1/2 -translate-x-1/2">
+        <h1 className="font-headline-sm-mobile text-headline-sm-mobile   font-bold text-on-surface absolute left-1/2 -translate-x-1/2">
           Checkout
         </h1>
         <button
@@ -39,7 +39,7 @@ function CheckoutPage() {
         </button>
       </header>
 
-      <main className="max-w-[800px] mx-auto pt-4 px-margin-mobile md:px-margin-desktop space-y-6">
+      <main className="max-w-[800px] mx-auto pt-4 px-margin-mobile  space-y-6">
         {/* Order Summary Snippet */}
         <section className="bg-surface rounded-xl border border-surface-variant p-4 flex items-center gap-4">
           <img
@@ -59,7 +59,7 @@ function CheckoutPage() {
         {/* Delivery Address */}
         <section className="bg-surface rounded-xl border border-surface-variant overflow-hidden">
           <div className="p-4 border-b border-surface-variant flex justify-between items-center">
-            <h2 className="font-headline-sm-mobile text-headline-sm-mobile md:font-headline-sm md:text-headline-sm text-on-surface flex items-center gap-2">
+            <h2 className="font-headline-sm-mobile text-headline-sm-mobile   text-on-surface flex items-center gap-2">
               <MaterialIcon name="location_on" filled className="text-primary-container" />
               Delivery Address
             </h2>
@@ -88,7 +88,7 @@ function CheckoutPage() {
         {/* Shipping Method */}
         <section className="bg-surface rounded-xl border border-surface-variant overflow-hidden">
           <div className="p-4 border-b border-surface-variant">
-            <h2 className="font-headline-sm-mobile text-headline-sm-mobile md:font-headline-sm md:text-headline-sm text-on-surface flex items-center gap-2">
+            <h2 className="font-headline-sm-mobile text-headline-sm-mobile   text-on-surface flex items-center gap-2">
               <MaterialIcon name="local_shipping" filled className="text-primary-container" />
               Shipping Method
             </h2>
@@ -134,7 +134,7 @@ function CheckoutPage() {
         {/* Payment Options */}
         <section className="bg-surface rounded-xl border border-surface-variant overflow-hidden">
           <div className="p-4 border-b border-surface-variant">
-            <h2 className="font-headline-sm-mobile text-headline-sm-mobile md:font-headline-sm md:text-headline-sm text-on-surface flex items-center gap-2">
+            <h2 className="font-headline-sm-mobile text-headline-sm-mobile   text-on-surface flex items-center gap-2">
               <MaterialIcon name="account_balance_wallet" filled className="text-primary-container" />
               Payment Options
             </h2>
@@ -229,9 +229,9 @@ function CheckoutPage() {
         </section>
       </main>
 
-      <div className="fixed bottom-0 left-0 w-full bg-surface border-t border-surface-variant p-4 pb-safe flex items-center justify-between gap-4 md:static md:bg-transparent md:border-none md:max-w-[800px] md:mx-auto md:p-0 md:mt-6 z-40">
-        <div className="hidden md:block"></div>
-        <div className="flex-1 md:flex-none md:w-full">
+      <div className="fixed bottom-0 left-0 w-full bg-surface border-t border-surface-variant p-4 pb-safe flex items-center justify-between gap-4        z-40">
+        <div className="hidden "></div>
+        <div className="flex-1  ">
           <Link
             to="/order-confirmation"
             className="w-full bg-primary-container text-on-primary rounded-lg h-[44px] flex items-center justify-center font-label-md text-label-md hover:opacity-90 active:scale-[0.98] transition-all shadow-sm"
