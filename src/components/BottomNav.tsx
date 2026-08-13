@@ -12,7 +12,7 @@ const items: { key: NavKey; label: string; icon: string; to: string }[] = [
 
 export function BottomNav({ active }: { active: NavKey }) {
   return (
-    <nav className="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center bg-surface px-4 py-2 pb-safe border-t border-surface-variant dark:border-outline-variant">
+    <nav className=" fixed bottom-0 inset-x-0 mx-auto w-full max-w-[440px] z-50 flex justify-around items-center bg-surface px-4 py-2 pb-safe border-t border-surface-variant dark:border-outline-variant">
       {items.map((item) => {
         const isActive = item.key === active;
         return (

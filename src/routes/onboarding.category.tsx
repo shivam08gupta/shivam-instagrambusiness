@@ -43,7 +43,7 @@ function CategoryPage() {
           >
             <MaterialIcon name="arrow_back" className="text-on-surface" />
           </button>
-          <h1 className="font-headline-sm-mobile text-headline-sm-mobile md:font-headline-sm md:text-headline-sm text-on-surface">Category</h1>
+          <h1 className="font-headline-sm-mobile text-headline-sm-mobile   text-on-surface">Category</h1>
           <div className="w-11 h-11" />
         </div>
         <div className="w-full max-w-[600px] px-sm mt-sm">
@@ -127,7 +127,7 @@ function CategoryPage() {
           })}
         </div>
       </main>
-      <div className="fixed bottom-0 w-full max-w-[600px] p-margin-mobile bg-surface/90 backdrop-blur-md border-t border-surface-variant pb-safe z-50">
+      <div className="fixed bottom-0 inset-x-0 mx-auto w-full max-w-[440px] p-margin-mobile bg-surface/90 backdrop-blur-md border-t border-surface-variant pb-safe z-50">
         <Link
           to="/onboarding/business"
           className="w-full h-12 bg-primary-container text-on-primary flex items-center justify-center rounded-lg font-label-md text-label-md hover:bg-surface-tint active:scale-[0.98] transition-all shadow-sm"

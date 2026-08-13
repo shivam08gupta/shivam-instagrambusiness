@@ -23,8 +23,8 @@ function BusinessPage() {
   const [state, setState] = useState("Rajasthan");
 
   return (
-    <div className="bg-background text-on-background min-h-screen flex flex-col md:flex-row font-body-md">
-      <header className="md:hidden sticky top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-14 bg-surface border-b border-surface-variant">
+    <div className="bg-background text-on-background min-h-screen flex flex-col  font-body-md">
+      <header className=" sticky top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-14 bg-surface border-b border-surface-variant">
         <button
           onClick={() => router.history.back()}
           className="w-11 h-11 flex items-center justify-center text-on-surface hover:bg-surface-container-low rounded-full transition-colors active:opacity-70"
@@ -34,10 +34,10 @@ function BusinessPage() {
         <h1 className="font-headline-sm-mobile text-headline-sm-mobile font-bold text-on-surface">Setup</h1>
         <div className="w-11" />
       </header>
-      <main className="flex-1 w-full max-w-[1200px] mx-auto p-margin-mobile md:p-margin-desktop flex items-center justify-center">
-        <div className="w-full max-w-md bg-surface-container-lowest border border-surface-variant rounded-lg p-lg shadow-sm">
-          <div className="mb-xl text-center md:text-left">
-            <h2 className="font-headline-md-mobile text-headline-md-mobile md:font-headline-md md:text-headline-md text-on-surface mb-sm">
+      <main className="flex-1 w-full max-w-[1200px] mx-auto p-margin-mobile  flex items-center justify-center">
+        <div className="w-full max-w-full bg-surface-container-lowest border border-surface-variant rounded-lg p-lg shadow-sm">
+          <div className="mb-xl text-center ">
+            <h2 className="font-headline-md-mobile text-headline-md-mobile   text-on-surface mb-sm">
               Business Information
             </h2>
             <p className="font-body-md text-body-md text-on-surface-variant">
@@ -121,7 +121,7 @@ function BusinessPage() {
             <div className="mt-xl pt-lg border-t border-surface-variant flex justify-end">
               <Link
                 to="/onboarding/verification"
-                className="w-full md:w-auto min-w-[120px] h-11 bg-primary-container text-on-primary rounded-lg font-label-md text-label-md px-lg flex items-center justify-center gap-sm hover:opacity-90 active:scale-[0.98] transition-all"
+                className="w-full  min-w-[120px] h-11 bg-primary-container text-on-primary rounded-lg font-label-md text-label-md px-lg flex items-center justify-center gap-sm hover:opacity-90 active:scale-[0.98] transition-all"
               >
                 Next
                 <MaterialIcon name="arrow_forward" className="text-[18px]" />

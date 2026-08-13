@@ -15,8 +15,8 @@ export const Route = createFileRoute("/order-confirmation")({
 
 function OrderConfirmationPage() {
   return (
-    <div className="bg-background text-on-background font-body-md min-h-screen flex flex-col items-center justify-center p-margin-mobile md:p-margin-desktop">
-      <main className="w-full max-w-[600px] flex flex-col items-center bg-surface border border-surface-variant rounded-xl p-lg md:p-xl shadow-sm">
+    <div className="bg-background text-on-background font-body-md min-h-screen flex flex-col items-center justify-center p-margin-mobile ">
+      <main className="w-full max-w-[600px] flex flex-col items-center bg-surface border border-surface-variant rounded-xl p-lg  shadow-sm">
         <div className="flex flex-col items-center mb-xl text-center">
           <div className="relative w-24 h-24 mb-md flex items-center justify-center anim-float">
             <div className="absolute inset-0 bg-primary-fixed rounded-full opacity-20"></div>
@@ -41,7 +41,7 @@ function OrderConfirmationPage() {
           </div>
         </div>
 
-        <div className="w-full relative h-48 md:h-64 rounded-lg overflow-hidden border border-surface-variant mb-xl bg-surface-container-highest">
+        <div className="w-full relative h-48  rounded-lg overflow-hidden border border-surface-variant mb-xl bg-surface-container-highest">
           <img
             className="w-full h-full object-cover"
             alt="A stylized, modern flat vector map graphic in light mode showing a delivery route. The map features subtle gray roads on an off-white background with a bright blue dashed line indicating a delivery path. A vibrant blue location pin marks the destination. Clean, professional corporate aesthetic with minimalistic details."

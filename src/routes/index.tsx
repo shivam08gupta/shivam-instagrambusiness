@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col items-center justify-center">
-      <main className="w-full max-w-md px-margin-mobile flex flex-col items-center text-center">
+      <main className="w-full max-w-full px-margin-mobile flex flex-col items-center text-center">
         <div className="mb-xl relative w-full h-48 rounded-xl overflow-hidden shadow-sm">
           <img
             alt="Welcome Illustration"

@@ -18,12 +18,12 @@ function DashboardPage() {
   return (
     <div className="bg-background text-on-surface antialiased flex flex-col min-h-screen">
       {/* TopAppBar */}
-      <header className="sticky top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-14 bg-surface border-b border-surface-variant dark:border-outline-variant">
+      <header className="sticky top-0 w-full z-50 flex justify-between items-center px-margin-mobile  h-14 bg-surface border-b border-surface-variant dark:border-outline-variant">
         <div className="flex items-center gap-4">
           <button className="active:opacity-70 transition-opacity p-2 -ml-2 rounded-full hover:bg-surface-container-low">
             <MaterialIcon name="arrow_back" className="text-primary dark:text-primary-fixed" />
           </button>
-          <h1 className="font-headline-sm-mobile text-headline-sm-mobile md:font-headline-sm md:text-headline-sm font-bold text-on-surface dark:text-inverse-on-surface">
+          <h1 className="font-headline-sm-mobile text-headline-sm-mobile   font-bold text-on-surface dark:text-inverse-on-surface">
             Amara's Boutique
           </h1>
         </div>
@@ -33,9 +33,9 @@ function DashboardPage() {
       </header>
 
       {/* Main Content Canvas */}
-      <main className="flex-grow p-margin-mobile md:p-margin-desktop pb-24 md:pb-margin-desktop max-w-7xl mx-auto w-full space-y-6">
+      <main className="flex-grow p-margin-mobile  pb-24  max-w-7xl mx-auto w-full space-y-6">
         {/* Welcome Section */}
-        <section className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <section className="flex flex-col    gap-4">
           <div>
             <h2 className="font-headline-md text-headline-md">Overview</h2>
             <p className="font-body-md text-body-md text-on-surface-variant">
@@ -65,7 +65,7 @@ function DashboardPage() {
         </section>
 
         {/* Bento Grid for Stats */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <section className="grid grid-cols-1  gap-4">
           {/* Today's Sales Card */}
           <div className="bg-surface-container-lowest border border-surface-variant rounded-xl p-md flex flex-col justify-between h-32 relative overflow-hidden group">
             <div className="flex justify-between items-start">
@@ -117,7 +117,7 @@ function DashboardPage() {
         </section>
 
         {/* Main Chart Section */}
-        <section className="bg-surface-container-lowest border border-surface-variant rounded-xl p-md md:p-lg flex flex-col gap-4">
+        <section className="bg-surface-container-lowest border border-surface-variant rounded-xl p-md  flex flex-col gap-4">
           <div className="flex justify-between items-center">
             <h3 className="font-headline-sm text-headline-sm">Weekly Revenue</h3>
             <button className="font-label-sm text-label-sm text-primary flex items-center gap-1">
